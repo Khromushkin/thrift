@@ -789,7 +789,6 @@ void t_js_generator::generate_js_struct_definition(ostream& out,
         f_types_ts_ << ts_indent() << (*m_iter)->get_name() << ": "
                     << ts_get_type((*m_iter)->get_type()) << ";" << endl;
       }
-
     }
   }
 
