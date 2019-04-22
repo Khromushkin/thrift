@@ -2263,7 +2263,7 @@ void t_js_generator::generate_serialize_field(ostream& out, t_field* tfield, str
     indent(out) << "output.";
 
     if (should_be_masked) {
-      indent(out) << "writeString(\"***\")" << endl;
+      out << "writeString(\"***\")";
      } else if (type->is_base_type()) {
       t_base_type::t_base tbase = ((t_base_type*)type)->get_base();
       switch (tbase) {
